@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  countrybot:
+    build: .
+    deploy:
+      resources:
+        limits:
+          memory: 300M
+    restart: unless-stopped
